@@ -1,5 +1,5 @@
 {
-  "name": "@neuroadapt/testing",
+  "name": "@neuroequality/neuroadapt-testing",
   "version": "1.1.0",
   "description": "Testing utilities and accessibility testing for NeuroAdapt SDK",
   "type": "module",
@@ -29,8 +29,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@neuroadapt/core": "workspace:*",
-    "@neuroadapt/ai": "workspace:*",
+    "@neuroequality/neuroadapt-core": "^1.1.0",
+    "@neuroequality/neuroadapt-ai": "^1.1.0",
     "axe-core": "^4.8.3",
     "@axe-core/playwright": "^4.8.3"
   },

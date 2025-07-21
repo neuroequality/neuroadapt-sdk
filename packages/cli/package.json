@@ -1,5 +1,5 @@
 {
-  "name": "@neuroadapt/cli",
+  "name": "@neuroequality/neuroadapt-cli",
   "version": "1.1.0",
   "description": "CLI tool for creating accessible quantum and VR applications",
   "type": "module",
@@ -29,9 +29,9 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@neuroadapt/core": "workspace:*",
-    "@neuroadapt/quantum": "workspace:*",
-    "@neuroadapt/vr": "workspace:*",
+    "@neuroequality/neuroadapt-core": "^1.1.0",
+    "@neuroequality/neuroadapt-quantum": "^1.1.0",
+    "@neuroequality/neuroadapt-vr": "^1.1.0",
     "commander": "^11.0.0",
     "chalk": "^5.3.0",
     "inquirer": "^9.2.12",

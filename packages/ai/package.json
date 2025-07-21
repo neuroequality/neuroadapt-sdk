@@ -1,5 +1,5 @@
 {
-  "name": "@neuroadapt/ai",
+  "name": "@neuroequality/neuroadapt-ai",
   "version": "1.1.0",
   "description": "AI-powered accessibility personalization for neurodivergent users",
   "type": "module",
@@ -33,7 +33,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@neuroadapt/core": "workspace:*",
+    "@neuroequality/neuroadapt-core": "^1.1.0",
     "eventemitter3": "^5.0.1"
   },
   "peerDependencies": {
