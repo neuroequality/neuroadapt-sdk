@@ -1,0 +1,81 @@
+{
+  "name": "@neuroadapt/mobile",
+  "version": "1.1.0",
+  "description": "Mobile accessibility features for React Native and cross-platform apps",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./react-native": {
+      "import": "./dist/react-native/index.js",
+      "types": "./dist/react-native/index.d.ts"
+    },
+    "./adapters": {
+      "import": "./dist/adapters/index.js",
+      "types": "./dist/adapters/index.d.ts"
+    },
+    "./gestures": {
+      "import": "./dist/gestures/index.js",
+      "types": "./dist/gestures/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@neuroadapt/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.72.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-native": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.0",
+    "vite": "^5.1.4",
+    "vitest": "^1.3.1",
+    "@types/node": "^20.11.20"
+  },
+  "keywords": [
+    "accessibility",
+    "mobile",
+    "react-native",
+    "cross-platform",
+    "neuroadapt",
+    "neurodivergent",
+    "inclusive",
+    "a11y"
+  ],
+  "author": "NeuroAdapt Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuroadapt/neuroadapt-sdk.git",
+    "directory": "packages/mobile"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 

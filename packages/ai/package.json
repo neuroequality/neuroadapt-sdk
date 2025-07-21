@@ -1,0 +1,72 @@
+{
+  "name": "@neuroadapt/ai",
+  "version": "1.1.0",
+  "description": "AI-powered accessibility personalization for neurodivergent users",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./advanced": {
+      "import": "./dist/advanced/index.js",
+      "types": "./dist/advanced/index.d.ts"
+    },
+    "./enterprise": {
+      "import": "./dist/enterprise/index.js",
+      "types": "./dist/enterprise/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@neuroadapt/core": "workspace:*",
+    "eventemitter3": "^5.0.1"
+  },
+  "peerDependencies": {
+    "anthropic": ">=0.20.0"
+  },
+  "peerDependenciesMeta": {
+    "anthropic": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "vite": "^5.1.4",
+    "vitest": "^1.3.1",
+    "@types/node": "^20.11.20"
+  },
+  "keywords": [
+    "accessibility",
+    "ai",
+    "machine-learning",
+    "neuroadapt",
+    "neurodivergent",
+    "personalization",
+    "adaptive",
+    "inclusive"
+  ],
+  "author": "NeuroAdapt Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neuroadapt/neuroadapt-sdk.git",
+    "directory": "packages/ai"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
