@@ -1,5 +1,5 @@
 {
-  "name": "@neuroadapt/core",
+  "name": "@neuroequality/neuroadapt-core",
   "version": "1.1.0",
   "description": "Core sensory, cognitive, and preference management for NeuroAdapt SDK",
   "type": "module",
@@ -54,7 +54,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/neuroadapt/neuroadapt-sdk.git",
+    "url": "https://github.com/neuroequality/neuroadapt-sdk.git",
     "directory": "packages/core"
   },
   "publishConfig": {

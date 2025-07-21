@@ -45,3 +45,6 @@ coverage/
 # Temporary folders
 tmp/
 temp/
+
+/SLICE_4_COMPLETE_SUMMARY.md
+/SLICE_5_6_COMPLETE_SUMMARY.md

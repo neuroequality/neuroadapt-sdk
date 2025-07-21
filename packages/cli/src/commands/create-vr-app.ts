@@ -308,7 +308,7 @@ export default defineConfig({
   }
 }
 
-private generateSafeZoneSetup(isTS: boolean): string {
+function generateSafeZoneSetup(isTS: boolean): string {
   const typeAnnotation = isTS ? ': void' : '';
   
   return `/**
@@ -363,7 +363,7 @@ export async function initializeSafeZone()${typeAnnotation} {
 `;
 }
 
-private generateProximitySetup(isTS: boolean): string {
+function generateProximitySetup(isTS: boolean): string {
   const typeAnnotation = isTS ? ': void' : '';
   
   return `/**
@@ -416,7 +416,7 @@ export async function initializeProximityDetection()${typeAnnotation} {
 }
 
 // Additional helper methods...
-private generateMainVRApp(template: string, platform: string, features: string[], isTS: boolean): string {
+function generateMainVRApp(template: string, platform: string, features: string[], isTS: boolean): string {
   return `/**
  * ${template.charAt(0).toUpperCase() + template.slice(1)} VR Application
  * Accessible virtual reality with NeuroAdapt SDK
@@ -498,7 +498,7 @@ ${platform === 'webxr' ? 'document.addEventListener("DOMContentLoaded", main);' 
 `;
 }
 
-private generateTherapyEnvironment(isTS: boolean): string {
+function generateTherapyEnvironment(isTS: boolean): string {
   return `/**
  * Therapy Environment - Calming VR space for therapeutic applications
  */
@@ -516,17 +516,17 @@ export class TherapyEnvironment {
     this.setupSafetyMonitoring();
   }
   
-  private setupCalmingSpace()${isTS ? ': void' : ''} {
+  function setupCalmingSpace()${isTS ? ': void' : ''} {
     // Soft lighting, natural sounds, peaceful visuals
     console.log('🌿 Calming space activated');
   }
   
-  private enableBreathingExercises()${isTS ? ': void' : ''} {
+  function enableBreathingExercises()${isTS ? ': void' : ''} {
     // Guided breathing with visual cues
     console.log('💨 Breathing guidance enabled');
   }
   
-  private setupSafetyMonitoring()${isTS ? ': void' : ''} {
+  function setupSafetyMonitoring()${isTS ? ': void' : ''} {
     // Monitor for distress signals
     console.log('🛡️ Safety monitoring active');
   }
@@ -534,7 +534,7 @@ export class TherapyEnvironment {
 `;
 }
 
-private generateEducationalVR(isTS: boolean): string {
+function generateEducationalVR(isTS: boolean): string {
   return `/**
  * Educational VR Environment - Learning-focused virtual reality
  */
@@ -551,17 +551,17 @@ export class EducationalVREnvironment {
     this.trackProgress();
   }
   
-  private setupLearningSpace()${isTS ? ': void' : ''} {
+  function setupLearningSpace()${isTS ? ': void' : ''} {
     // Create immersive educational environment
     console.log('🎓 Learning space ready');
   }
   
-  private enableInteractiveLearning()${isTS ? ': void' : ''} {
+  function enableInteractiveLearning()${isTS ? ': void' : ''} {
     // Interactive objects and explanations
     console.log('🤝 Interactive learning enabled');
   }
   
-  private trackProgress()${isTS ? ': void' : ''} {
+  function trackProgress()${isTS ? ': void' : ''} {
     // Monitor learning progress and adapt
     console.log('📊 Progress tracking active');
   }
@@ -569,7 +569,7 @@ export class EducationalVREnvironment {
 `;
 }
 
-private generateWebXRHTML(appName: string, template: string): string {
+function generateWebXRHTML(appName: string, template: string): string {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -729,7 +729,7 @@ private generateWebXRHTML(appName: string, template: string): string {
 `;
 }
 
-private generateVRReadme(appName: string, template: string, platform: string, isTS: boolean, features: string[]): string {
+function generateVRReadme(appName: string, template: string, platform: string, isTS: boolean, features: string[]): string {
   return `# ${appName}
 
 An accessible VR application built with NeuroAdapt SDK, featuring comprehensive safety and accessibility features.
@@ -882,4 +882,3 @@ For VR accessibility support or safety questions, visit our [documentation](http
 **Emergency Support**: If experiencing any safety issues, discontinue use immediately and contact support.
 `;
 }
-} 

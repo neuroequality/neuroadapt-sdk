@@ -31,7 +31,8 @@
   "dependencies": {
     "@neuroadapt/core": "workspace:*",
     "@neuroadapt/ai": "workspace:*",
-    "axe-core": "^4.8.3"
+    "axe-core": "^4.8.3",
+    "@axe-core/playwright": "^4.8.3"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.0",

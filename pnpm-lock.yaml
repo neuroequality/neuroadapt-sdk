@@ -260,6 +260,9 @@ importers:
 
   packages/testing:
     dependencies:
+      '@axe-core/playwright':
+        specifier: ^4.8.3
+        version: 4.10.2(playwright-core@1.54.1)
       '@neuroadapt/ai':
         specifier: workspace:*
         version: link:../ai
@@ -346,6 +349,15 @@ packages:
       css-tree: 2.3.1
       is-potential-custom-element-name: 1.0.1
     dev: true
+
+  /@axe-core/playwright@4.10.2(playwright-core@1.54.1):
+    resolution: {integrity: sha512-6/b5BJjG6hDaRNtgzLIfKr5DfwyiLHO4+ByTLB0cJgWSM8Ll7KqtdblIS6bEkwSF642/Ex91vNqIl3GLXGlceg==}
+    peerDependencies:
+      playwright-core: '>= 1.0.0'
+    dependencies:
+      axe-core: 4.10.3
+      playwright-core: 1.54.1
+    dev: false
 
   /@babel/code-frame@7.27.1:
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
@@ -5567,7 +5579,6 @@ packages:
     resolution: {integrity: sha512-Nbjs2zjj0htNhzgiy5wu+3w09YetDx5pkrpI/kZotDlDUaYk0HVA5xrBVPdow4SAUIlhgKcJeJg4GRKW6xHusA==}
     engines: {node: '>=18'}
     hasBin: true
-    dev: true
 
   /playwright@1.54.1:
     resolution: {integrity: sha512-peWpSwIBmSLi6aW2auvrUtf2DqY16YYcCMO8rTVx486jKmDTJg7UAhyrraP98GB8BoPURZP8+nxO7TSd4cPr5g==}

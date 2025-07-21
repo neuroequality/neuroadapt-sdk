@@ -3,7 +3,7 @@
  * @fileoverview Provides testing utilities for mobile accessibility across platforms
  */
 
-import { Platform, Dimensions, AccessibilityInfo } from 'react-native';
+import { Platform, Dimensions } from 'react-native';
 import type { Preferences } from '@neuroadapt/core';
 import type { MobileAccessibilityState } from '../react-native/accessibility-provider';
 import type { GestureEvent, GestureType } from '../gestures/accessible-gestures';
