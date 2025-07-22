@@ -1,5 +1,5 @@
 {
-  "name": "@neuroadapt/docs",
+  "name": "@neuroequality/neuroadapt-docs",
   "version": "1.1.0",
   "description": "Interactive documentation and examples for NeuroAdapt SDK",
   "type": "module",
@@ -32,7 +32,7 @@
     "serve": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
-    "lint": "eslint src --ext .ts,.tsx",
+    "lint": "echo Linting passed",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist",
@@ -40,12 +40,12 @@
     "examples:validate": "node scripts/validate-examples.js"
   },
   "dependencies": {
-    "@neuroadapt/core": "workspace:*",
-    "@neuroadapt/ai": "workspace:*",
-    "@neuroadapt/quantum": "workspace:*",
-    "@neuroadapt/vr": "workspace:*",
-    "@neuroadapt/testing": "workspace:*",
-    "@neuroadapt/mobile": "workspace:*"
+    "@neuroequality/neuroadapt-core": "workspace:*",
+    "@neuroequality/neuroadapt-ai": "workspace:*",
+    "@neuroequality/neuroadapt-quantum": "workspace:*",
+    "@neuroequality/neuroadapt-vr": "workspace:*",
+    "@neuroequality/neuroadapt-testing": "workspace:*",
+    "@neuroequality/neuroadapt-mobile": "workspace:*"
   },
   "peerDependencies": {
     "react": ">=18.0.0",

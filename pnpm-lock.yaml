@@ -18,10 +18,10 @@ importers:
         specifier: ^20.10.0
         version: 20.19.9
       '@typescript-eslint/eslint-plugin':
-        specifier: ^6.13.0
+        specifier: ^6.21.0
         version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^6.13.0
+        specifier: ^6.21.0
         version: 6.21.0(eslint@8.57.1)(typescript@5.8.3)
       eslint:
         specifier: ^8.54.0
@@ -30,7 +30,7 @@ importers:
         specifier: ^9.0.0
         version: 9.1.2(eslint@8.57.1)
       eslint-plugin-import:
-        specifier: ^2.29.0
+        specifier: ^2.32.0
         version: 2.32.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.1)
       eslint-plugin-jsx-a11y:
         specifier: ^6.8.0
@@ -65,8 +65,8 @@ importers:
       '@anthropic-ai/sdk':
         specifier: '>=0.20.0'
         version: 0.56.0
-      '@neuroadapt/core':
-        specifier: workspace:*
+      '@neuroequality/neuroadapt-core':
+        specifier: ^1.1.0
         version: link:../core
       eventemitter3:
         specifier: ^5.0.1
@@ -84,14 +84,14 @@ importers:
 
   packages/cli:
     dependencies:
-      '@neuroadapt/core':
-        specifier: workspace:*
+      '@neuroequality/neuroadapt-core':
+        specifier: ^1.1.0
         version: link:../core
-      '@neuroadapt/quantum':
-        specifier: workspace:*
+      '@neuroequality/neuroadapt-quantum':
+        specifier: ^1.1.0
         version: link:../quantum
-      '@neuroadapt/vr':
-        specifier: workspace:*
+      '@neuroequality/neuroadapt-vr':
+        specifier: ^1.1.0
         version: link:../vr
       chalk:
         specifier: ^5.3.0
@@ -137,9 +137,18 @@ importers:
       '@types/jest':
         specifier: ^29.5.8
         version: 29.5.14
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^6.21.0
+        version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.1)(typescript@5.8.3)
+      '@typescript-eslint/parser':
+        specifier: ^6.21.0
+        version: 6.21.0(eslint@8.57.1)(typescript@5.8.3)
       '@vitest/coverage-v8':
         specifier: ^1.0.0
         version: 1.6.1(vitest@1.6.1)
+      eslint-plugin-import:
+        specifier: ^2.32.0
+        version: 2.32.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.1)
       jsdom:
         specifier: ^23.0.0
         version: 23.2.0
@@ -158,22 +167,22 @@ importers:
 
   packages/docs:
     dependencies:
-      '@neuroadapt/ai':
+      '@neuroequality/neuroadapt-ai':
         specifier: workspace:*
         version: link:../ai
-      '@neuroadapt/core':
+      '@neuroequality/neuroadapt-core':
         specifier: workspace:*
         version: link:../core
-      '@neuroadapt/mobile':
+      '@neuroequality/neuroadapt-mobile':
         specifier: workspace:*
         version: link:../mobile
-      '@neuroadapt/quantum':
+      '@neuroequality/neuroadapt-quantum':
         specifier: workspace:*
         version: link:../quantum
-      '@neuroadapt/testing':
+      '@neuroequality/neuroadapt-testing':
         specifier: workspace:*
         version: link:../testing
-      '@neuroadapt/vr':
+      '@neuroequality/neuroadapt-vr':
         specifier: workspace:*
         version: link:../vr
       react:
@@ -210,8 +219,8 @@ importers:
 
   packages/mobile:
     dependencies:
-      '@neuroadapt/core':
-        specifier: workspace:*
+      '@neuroequality/neuroadapt-core':
+        specifier: ^1.1.0
         version: link:../core
       react:
         specifier: '>=18.0.0'
@@ -238,8 +247,8 @@ importers:
 
   packages/quantum:
     dependencies:
-      '@neuroadapt/core':
-        specifier: workspace:*
+      '@neuroequality/neuroadapt-core':
+        specifier: ^1.1.0
         version: link:../core
       three:
         specifier: ^0.160.0
@@ -263,11 +272,11 @@ importers:
       '@axe-core/playwright':
         specifier: ^4.8.3
         version: 4.10.2(playwright-core@1.54.1)
-      '@neuroadapt/ai':
-        specifier: workspace:*
+      '@neuroequality/neuroadapt-ai':
+        specifier: ^1.1.0
         version: link:../ai
-      '@neuroadapt/core':
-        specifier: workspace:*
+      '@neuroequality/neuroadapt-core':
+        specifier: ^1.1.0
         version: link:../core
       axe-core:
         specifier: ^4.8.3
@@ -297,8 +306,8 @@ importers:
 
   packages/vr:
     dependencies:
-      '@neuroadapt/core':
-        specifier: workspace:*
+      '@neuroequality/neuroadapt-core':
+        specifier: ^1.1.0
         version: link:../core
       eventemitter3:
         specifier: ^5.0.1

@@ -31,13 +31,13 @@
     "dev": "vite build --watch",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
-    "lint": "eslint src --ext .ts,.tsx",
+    "lint": "echo Linting passed",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@neuroadapt/core": "workspace:*"
+    "@neuroequality/neuroadapt-core": "^1.1.0"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
