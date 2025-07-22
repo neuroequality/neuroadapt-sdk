@@ -19,10 +19,10 @@ The NeuroAdapt SDK is a comprehensive TypeScript toolkit that provides adaptive 
 |---------|-------------|--------|
 | [`@neuroadapt/core`](./packages/core) | Preferences, sensory/cognitive adaptations | ✅ Ready |
 | [`@neuroadapt/ai`](./packages/ai) | AI adapters and PredictableAI interface | ✅ Ready |
-| [`@neuroadapt/vr`](./packages/vr) | WebXR safe spaces and comfort zones | 🚧 Coming Soon |
-| [`@neuroadapt/quantum`](./packages/quantum) | Accessible quantum visualization | 🚧 Coming Soon |
-| [`@neuroadapt/testing`](./packages/testing) | Test utilities and accessibility testing | 🚧 Coming Soon |
-| [`@neuroadapt/cli`](./packages/cli) | Scaffolding and development tools | 🚧 Coming Soon |
+| [`@neuroadapt/vr`](./packages/vr) | WebXR safe spaces and comfort zones | ✅ Ready |
+| [`@neuroadapt/quantum`](./packages/quantum) | Accessible quantum visualization | ✅ Ready |
+| [`@neuroadapt/testing`](./packages/testing) | Test utilities and accessibility testing | ✅ Ready |
+| [`@neuroadapt/cli`](./packages/cli) | Scaffolding and development tools | ✅ Ready |
 
 ## 🚀 Quick Start
 
